@@ -1,22 +1,23 @@
 <?php
-namespace Models;
-
-class Subscription
+namespace Models
 {
-    public function __construct() {
-        
+
+    class Subscription
+    {
+        public function __construct() {
+            $this->company = new Organisation();
+            $this->contact = new Contact();
+            $this->status = new SubscriptionStatus();
+        }
+        public 
+            $Id
+            , $code
+            , $alias
+            , $timeZone
+            , $notes
+            , $company
+            , $contact
+            , $status
+            ;
     }
-    public 
-        $Id
-        , $code
-        , $alias
-        , $timeZone
-        , $notes
-        ;
-
-//    public SubscriptionStatus Status;
-
-//    public Organisation Company;
-
-//    public Contact Contact;
 }
