@@ -1,24 +1,22 @@
 <?php
-namespace Incontrl.Models;
+namespace Models;
 
-public class Subscription
+class Subscription
 {
     public function __construct() {
         
     }
-    public string Id;
-
-    public string Code;
-
-    public string Alias;
-
-    public string TimeZone;
+    public 
+        $Id
+        , $code
+        , $alias
+        , $timeZone
+        , $notes
+        ;
 
 //    public SubscriptionStatus Status;
 
 //    public Organisation Company;
 
 //    public Contact Contact;
-
-    public string Notes;
 }
